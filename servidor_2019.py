@@ -1,13 +1,17 @@
 from xmlrpc.server import SimpleXMLRPCServer
-users = [["jacobo","admin"]]
+users = [['jacobo', 'admin']]
 
 
 class operaciones:
 	def login(self,a,b):
 		c = [a,b]
-		if a in users
+		if c in users:
+			return True
+		else:
+			return False
 
-	def registro
+	def registro(self,a,b):
+		users.append([a,b])
 
 
 	def	suma(self,a,b):
